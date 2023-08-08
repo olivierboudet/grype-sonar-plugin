@@ -12,7 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <sonar.api.version>9.17.0.587</sonar.api.version>
+    <sonar.api.version>10.0.0.695</sonar.api.version>
     <sonar.api.impl.version>9.9.1.69595</sonar.api.impl.version>
     <jdk.min.version>17</jdk.min.version>
     <sonar.sources>src/main/java,src/main/js</sonar.sources>
