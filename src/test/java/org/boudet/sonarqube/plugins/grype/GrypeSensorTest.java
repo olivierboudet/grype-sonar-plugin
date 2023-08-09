@@ -62,8 +62,8 @@ public class GrypeSensorTest {
             assertEquals(CveRuleDefinition.RULE_CVE.rule(), issue.ruleKey().rule());
         }
         Issue firstIssue = context.allIssues().stream().findFirst().orElseThrow();
-        assertEquals(firstIssue.primaryLocation().message(), "php-checks v3.27.1.9352| CVSS Score: 5.000000 | Type: java-archive");
-        assertEquals(firstIssue.overriddenSeverity(), Severity.MAJOR);
+        assertEquals("php-checks v3.27.1.9352| CVSS Score: 5.000000 | Type: java-archive", firstIssue.primaryLocation().message());
+        assertEquals(Severity.MAJOR, firstIssue.overriddenSeverity());
     }
 
     @Test
