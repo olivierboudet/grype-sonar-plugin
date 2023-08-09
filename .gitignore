@@ -9,3 +9,5 @@ sonar-example-plugin.iml
 .classpath
 .project
 .settings/
+
+yarnrc.yml

@@ -3,11 +3,11 @@
   "license": "LGPL-3.0",
   "version": "1.0.0",
   "devDependencies": {
+    "@babel/core": "7.22.10",
     "autoprefixer": "6.2.2",
-    "babel-core": "6.14.0",
-    "babel-jest": "18.0.0",
-    "babel-loader": "6.2.5",
-    "babel-preset-react-app": "0.2.1",
+    "babel-jest": "29.6.2",
+    "babel-loader": "9.1.3",
+    "babel-preset-react-app": "10.0.1",
     "cross-env": "2.0.0",
     "cross-spawn": "4.0.0",
     "css-loader": "0.23.1",
@@ -22,15 +22,16 @@
     "find-cache-dir": "0.1.1",
     "gzip-size": "3.0.0",
     "imports-loader": "0.6.5",
-    "jest": "18.0.0",
+    "jest": "29.6.2",
     "json-loader": "0.5.4",
     "path-exists": "2.1.0",
-    "postcss-loader": "0.8.0",
-    "prettier": "0.22.0",
+    "postcss": "^8.4.27",
+    "postcss-loader": "^7.3.3",
+    "prettier": "3.0.1",
     "react": "15.6.2",
     "react-addons-shallow-compare": "15.6.2",
     "react-addons-test-utils": "15.6.2",
-    "react-dev-utils": "0.2.1",
+    "react-dev-utils": "12.0.1",
     "react-dom": "15.6.2",
     "react-router": "3.0.2",
     "react-transform-hmr": "1.0.4",
@@ -39,8 +40,8 @@
     "script-loader": "0.6.1",
     "strip-ansi": "3.0.1",
     "style-loader": "0.13.0",
-    "webpack": "1.13.2",
-    "webpack-dev-server": "1.16.1"
+    "webpack": "5.88.2",
+    "webpack-dev-server": "4.15.1"
   },
   "scripts": {
     "build": "node scripts/build.js",
@@ -79,6 +80,5 @@
       "<rootDir>/conf"
     ]
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
