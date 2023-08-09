@@ -15,6 +15,18 @@ The following table lists the plugin version compatible with different SonarQube
 
 Download the latest jar from releases page, copy it to the `/opt/sonarqube/extensions/plugins/` directory and restart SonarQube.
 
-# Configuration
+# Usage
 
+Run a grype analysis with output as JSON and HTML with a template.
+```
+grype sonarqube:lts -o json=/tmp/report.json -o template=/tmp/report.html -t /tmp/grype.template.html
+```
 
+Then import issues to SonarQube by setting following properties:
+
+| Property                    | Description              |
+|-----------------------------|--------------------------|
+| sonar.grype.reportPath      | Path to the JSON report. |
+| sonar.grype.htmlReportPath  | Path to the HTML report. |
+
+See following chapters on usage with you build tool. 
