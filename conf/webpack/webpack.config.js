@@ -25,6 +25,9 @@ module.exports = {
   entry: {
     report: ["./src/main/js/report/index.js"],
   },
+  optimization: {
+    minimizer: [],
+  },
   output: {
     // The entry point files MUST be shipped inside the final JAR's static/
     // directory.
@@ -32,7 +35,7 @@ module.exports = {
     filename: "[name].js"
   },
   resolve: {
-    root: path.join(__dirname, "src/main/js")
+    roots: [__dirname, "src/main/js"]
   },
   externals: {
     // React 16.8 ships with SonarQube, and should be re-used to avoid 
@@ -46,30 +49,20 @@ module.exports = {
   },
   module: {
     // Our example uses Babel to transpile our code.
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: "babel",
+        use: "babel-loader",
         exclude: /(node_modules)/
       },
       {
         test: /\.css/,
-        loader: "style-loader!css-loader!postcss-loader"
+        use: ["style-loader", "css-loader" , "postcss-loader"]
       },
-      { test: /\.json$/, loader: "json" }
+      {
+        test: /\.json$/,
+        use: "json-loader"
+      }
     ]
   },
-  postcss() {
-    return [
-      autoprefixer({
-        browsers: [
-          "last 3 Chrome versions",
-          "last 3 Firefox versions",
-          "last 3 Safari versions",
-          "last 3 Edge versions",
-          "IE 11"
-        ]
-      })
-    ];
-  }
 };
