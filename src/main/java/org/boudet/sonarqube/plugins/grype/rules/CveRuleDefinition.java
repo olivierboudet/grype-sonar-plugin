@@ -1,5 +1,6 @@
 package org.boudet.sonarqube.plugins.grype.rules;
 
+import org.sonar.api.code.CodeCharacteristic;
 import org.sonar.api.rule.RuleKey;
 import org.sonar.api.rule.RuleStatus;
 import org.sonar.api.rule.Severity;
@@ -22,11 +23,12 @@ public class CveRuleDefinition implements RulesDefinition {
 
         repository.createRule(RULE_CVE.rule())
             .setType(RuleType.SECURITY_HOTSPOT)
+            //.setCharacteristic(CodeCharacteristic.SECURE)
             .addTags("cve", "security", "vulnerability")
             .setName("Components with Known Vulnerabilities")
             .setSeverity(Severity.MAJOR)
             .setStatus(RuleStatus.READY)
-            .setHtmlDescription("CVE rule")
+            .setHtmlDescription("Including a dependency with a known vulnerability exposes your application to a security breach")
             .addDescriptionSection(descriptionSection(RuleDescriptionSection.RuleDescriptionSectionKeys.INTRODUCTION_SECTION_KEY, "One component is known to be affected by a vulnerability.", null))
             .addDescriptionSection(descriptionSection(ROOT_CAUSE_SECTION_KEY, "The root cause of this issue is this and that.", null))
             .addDescriptionSection(descriptionSection(HOW_TO_FIX_SECTION_KEY, "Upgrade the component", null));

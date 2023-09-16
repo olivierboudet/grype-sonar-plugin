@@ -7,31 +7,42 @@ import org.boudet.sonarqube.plugins.grype.settings.GrypeConfiguration;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.sonar.api.batch.fs.FileSystem;
+import org.sonar.api.batch.fs.InputFile;
+import org.sonar.api.batch.fs.internal.DefaultInputFile;
+import org.sonar.api.batch.fs.internal.TestInputFileBuilder;
 import org.sonar.api.batch.rule.Severity;
+import org.sonar.api.batch.sensor.SensorContext;
 import org.sonar.api.batch.sensor.SensorDescriptor;
 import org.sonar.api.batch.sensor.internal.SensorContextTester;
 import org.sonar.api.batch.sensor.issue.Issue;
+import org.sonar.api.batch.sensor.issue.IssueLocation;
 import org.sonar.api.config.internal.MapSettings;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.*;
 
-public class GrypeSensorTest {
+class GrypeSensorTest {
 
     private GrypeSensor sensor;
 
-    private FileSystem fileSystem;
+    private SensorContextTester context;
+
     @BeforeEach
     public void init() {
-        this.fileSystem = mock(FileSystem.class);
-        this.sensor = new GrypeSensor(this.fileSystem);
+        context = SensorContextTester.create(new File("src/test/resources"));
+
+        this.sensor = new GrypeSensor();
     }
 
     @Test
@@ -43,8 +54,6 @@ public class GrypeSensorTest {
 
     @Test
     void shouldReturnIssues() throws URISyntaxException {
-        final SensorContextTester context = SensorContextTester.create(new File(""));
-
         String report = "report.json";
 
         // Plugin Configuration
@@ -52,10 +61,6 @@ public class GrypeSensorTest {
         settings.setProperty(GrypeConfiguration.JSON_REPORT_PATH_PROPERTY, report);
         context.setSettings(settings);
 
-        final URI sampleUri = Objects.requireNonNull(getClass().getClassLoader().getResource(report)).toURI();
-        File sample = Paths.get(sampleUri).toFile();
-
-        when(fileSystem.resolvePath(report)).thenReturn(sample);
         sensor.execute(context);
         assertEquals(730, context.allIssues().size());
         for (Issue issue : context.allIssues()) {
@@ -68,8 +73,6 @@ public class GrypeSensorTest {
 
     @Test
     void shouldNotReturnIssuesIfReportNotFound() {
-        final SensorContextTester context = SensorContextTester.create(new File(""));
-
         String report = "notfound.json";
 
         // Plugin Configuration
@@ -77,30 +80,22 @@ public class GrypeSensorTest {
         settings.setProperty(GrypeConfiguration.JSON_REPORT_PATH_PROPERTY, report);
         context.setSettings(settings);
 
-        File wrongFile = new File(report);
-
-        when(fileSystem.resolvePath(report)).thenReturn(wrongFile);
         sensor.execute(context);
         assertEquals(0, context.allIssues().size());
     }
 
     @Test
     void shouldUseDefaultPathIfNotDefined() {
-        final SensorContextTester context = SensorContextTester.create(new File(""));
-
         // Plugin Configuration
         MapSettings settings = new MapSettings();
         context.setSettings(settings);
 
         sensor.execute(context);
         assertEquals(0, context.allIssues().size());
-        verify(this.fileSystem).resolvePath("grype-report.json");
     }
 
     @Test
     void shouldSaveHtmlReport() throws URISyntaxException {
-        final SensorContextTester context = SensorContextTester.create(new File(""));
-
         String jsonReport = "report.json";
         String htmlReport = "report.html";
 
@@ -110,19 +105,34 @@ public class GrypeSensorTest {
         settings.setProperty(GrypeConfiguration.HTML_REPORT_PATH_PROPERTY, htmlReport);
         context.setSettings(settings);
 
-        final URI sampleJsonUri = Objects.requireNonNull(getClass().getClassLoader().getResource(jsonReport)).toURI();
-        File sampleJson = Paths.get(sampleJsonUri).toFile();
+        sensor.execute(context);
+        assertEquals(730, context.allIssues().size());
 
-        final URI sampleHtmlUri = Objects.requireNonNull(getClass().getClassLoader().getResource(htmlReport)).toURI();
-        File sampleHtml = Paths.get(sampleHtmlUri).toFile();
+        assertNotNull(context.measure("projectKey", GrypeMetrics.REPORT).value());
+    }
 
-        when(fileSystem.resolvePath(jsonReport)).thenReturn(sampleJson);
-        when(fileSystem.resolvePath(htmlReport)).thenReturn(sampleHtml);
+    @Test
+    void shouldParseDependenciesReport() throws URISyntaxException, IOException {
+        File gradleFile = new File(Objects.requireNonNull(getClass().getClassLoader().getResource("build.gradle")).toURI());
+        context.fileSystem().add(TestInputFileBuilder.create("", "build.gradle").setContents(Files.readString(gradleFile.toPath())).build());
+
+        String jsonReport = "report.json";
+        String dependenciesReport = "dependencies.json";
+
+        // Plugin Configuration
+        MapSettings settings = new MapSettings();
+        settings.setProperty(GrypeConfiguration.JSON_REPORT_PATH_PROPERTY, jsonReport);
+        settings.setProperty(GrypeConfiguration.DEPENDENCIES_REPORT_PATH_PROPERTY, dependenciesReport);
+        context.setSettings(settings);
 
         sensor.execute(context);
         assertEquals(730, context.allIssues().size());
-        verify(this.fileSystem).resolvePath(jsonReport);
-        verify(this.fileSystem).resolvePath(htmlReport);
-        assertNotNull(context.measure("projectKey", GrypeMetrics.REPORT).value());
+
+        List<IssueLocation> nettyCves = context.allIssues().stream().filter(issue -> issue.primaryLocation().message().equals("netty-codec-http v4.1.66.Final| CVSS Score: 5.500000 | Type: java-archive")).map(issue -> issue.primaryLocation()).toList();
+
+        assertEquals(1, nettyCves.size());
+        assertEquals(13, nettyCves.get(0).textRange().start().line());
+        assertEquals(13, nettyCves.get(0).textRange().end().line());
+
     }
 }
