@@ -1,0 +1,3237 @@
+{
+  "gradleVersion": "Gradle 8.3",
+  "generationDate": "Tue Sep 05 21:46:50 CEST 2023",
+  "project": {
+    "name": "resources",
+    "description": null,
+    "configurations": [
+      {
+        "name": "annotationProcessor",
+        "description": "Annotation processors and their dependencies for source set 'main'.",
+        "dependencies": [],
+        "moduleInsights": []
+      },
+      {
+        "name": "compileClasspath",
+        "description": "Compile classpath for source set 'main'.",
+        "dependencies": [
+          {
+            "module": "org.sonarsource.sonarqube:sonar-plugin-api",
+            "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+            "resolvable": "RESOLVED",
+            "hasConflict": false,
+            "alreadyRendered": false,
+            "children": []
+          },
+          {
+            "module": "io.netty:netty-codec-http",
+            "name": "io.netty:netty-codec-http:4.1.66.Final",
+            "resolvable": "RESOLVED",
+            "hasConflict": false,
+            "alreadyRendered": false,
+            "children": [
+              {
+                "module": "io.netty:netty-common",
+                "name": "io.netty:netty-common:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": []
+              },
+              {
+                "module": "io.netty:netty-buffer",
+                "name": "io.netty:netty-buffer:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "module": "io.netty:netty-transport",
+                "name": "io.netty:netty-transport:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-buffer",
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-resolver",
+                    "name": "io.netty:netty-resolver:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": [
+                      {
+                        "module": "io.netty:netty-common",
+                        "name": "io.netty:netty-common:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "module": "io.netty:netty-codec",
+                "name": "io.netty:netty-codec:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-buffer",
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-transport",
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "module": "io.netty:netty-handler",
+                "name": "io.netty:netty-handler:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-resolver",
+                    "name": "io.netty:netty-resolver:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-buffer",
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-transport",
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-codec",
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "moduleInsights": [
+          {
+            "module": "io.netty:netty-common",
+            "insight": [
+              {
+                "name": "io.netty:netty-common:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-common:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "compileClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-codec:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-handler:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-transport:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-handler:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-codec:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-resolver:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-transport:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-transport",
+            "insight": [
+              {
+                "name": "io.netty:netty-transport:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-transport:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "compileClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-handler",
+            "insight": [
+              {
+                "name": "io.netty:netty-handler:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-handler:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "compileClasspath",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": true,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-resolver",
+            "insight": [
+              {
+                "name": "io.netty:netty-resolver:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-resolver:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "compileClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-codec:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-handler:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-buffer",
+            "insight": [
+              {
+                "name": "io.netty:netty-buffer:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-buffer:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "compileClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-codec:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-codec",
+            "insight": [
+              {
+                "name": "io.netty:netty-codec:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-codec:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "compileClasspath",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": true,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-codec-http",
+            "insight": [
+              {
+                "name": "io.netty:netty-codec-http:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-codec-http:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "compileClasspath",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "org.sonarsource.sonarqube:sonar-plugin-api",
+            "insight": [
+              {
+                "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "compileClasspath",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "compileOnly",
+        "description": "Compile-only dependencies for the 'main' feature.",
+        "dependencies": [],
+        "moduleInsights": []
+      },
+      {
+        "name": "default",
+        "description": "Configuration for default artifacts.",
+        "dependencies": [],
+        "moduleInsights": []
+      },
+      {
+        "name": "implementation",
+        "description": "Implementation dependencies for the 'main' feature.",
+        "dependencies": [
+          {
+            "module": null,
+            "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+            "resolvable": "UNRESOLVED",
+            "hasConflict": false,
+            "alreadyRendered": false,
+            "children": []
+          },
+          {
+            "module": null,
+            "name": "io.netty:netty-codec-http:4.1.66.Final",
+            "resolvable": "UNRESOLVED",
+            "hasConflict": false,
+            "alreadyRendered": false,
+            "children": []
+          }
+        ],
+        "moduleInsights": []
+      },
+      {
+        "name": "mainSourceElements",
+        "description": "List of source directories contained in the Main SourceSet.",
+        "dependencies": [],
+        "moduleInsights": []
+      },
+      {
+        "name": "runtimeClasspath",
+        "description": "Runtime classpath of source set 'main'.",
+        "dependencies": [
+          {
+            "module": "org.sonarsource.sonarqube:sonar-plugin-api",
+            "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+            "resolvable": "RESOLVED",
+            "hasConflict": false,
+            "alreadyRendered": false,
+            "children": []
+          },
+          {
+            "module": "io.netty:netty-codec-http",
+            "name": "io.netty:netty-codec-http:4.1.66.Final",
+            "resolvable": "RESOLVED",
+            "hasConflict": false,
+            "alreadyRendered": false,
+            "children": [
+              {
+                "module": "io.netty:netty-common",
+                "name": "io.netty:netty-common:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": []
+              },
+              {
+                "module": "io.netty:netty-buffer",
+                "name": "io.netty:netty-buffer:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "module": "io.netty:netty-transport",
+                "name": "io.netty:netty-transport:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-buffer",
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-resolver",
+                    "name": "io.netty:netty-resolver:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": [
+                      {
+                        "module": "io.netty:netty-common",
+                        "name": "io.netty:netty-common:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "module": "io.netty:netty-codec",
+                "name": "io.netty:netty-codec:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-buffer",
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-transport",
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "module": "io.netty:netty-handler",
+                "name": "io.netty:netty-handler:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-resolver",
+                    "name": "io.netty:netty-resolver:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-buffer",
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-transport",
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-codec",
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "moduleInsights": [
+          {
+            "module": "io.netty:netty-common",
+            "insight": [
+              {
+                "name": "io.netty:netty-common:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-common:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "runtimeClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-codec:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-handler:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-transport:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-handler:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-codec:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-resolver:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-transport:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-transport",
+            "insight": [
+              {
+                "name": "io.netty:netty-transport:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-transport:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "runtimeClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-handler",
+            "insight": [
+              {
+                "name": "io.netty:netty-handler:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-handler:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "runtimeClasspath",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": true,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-resolver",
+            "insight": [
+              {
+                "name": "io.netty:netty-resolver:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-resolver:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "runtimeClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-codec:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-handler:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-buffer",
+            "insight": [
+              {
+                "name": "io.netty:netty-buffer:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-buffer:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "runtimeClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-codec:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-codec",
+            "insight": [
+              {
+                "name": "io.netty:netty-codec:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-codec:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "runtimeClasspath",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": true,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-codec-http",
+            "insight": [
+              {
+                "name": "io.netty:netty-codec-http:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-codec-http:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "runtimeClasspath",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "org.sonarsource.sonarqube:sonar-plugin-api",
+            "insight": [
+              {
+                "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "runtimeClasspath",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "runtimeElements",
+        "description": "Runtime elements for the 'main' feature.",
+        "dependencies": [],
+        "moduleInsights": []
+      },
+      {
+        "name": "runtimeOnly",
+        "description": "Runtime-only dependencies for the 'main' feature.",
+        "dependencies": [],
+        "moduleInsights": []
+      },
+      {
+        "name": "testAnnotationProcessor",
+        "description": "Annotation processors and their dependencies for source set 'test'.",
+        "dependencies": [],
+        "moduleInsights": []
+      },
+      {
+        "name": "testCompileClasspath",
+        "description": "Compile classpath for source set 'test'.",
+        "dependencies": [
+          {
+            "module": "org.sonarsource.sonarqube:sonar-plugin-api",
+            "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+            "resolvable": "RESOLVED",
+            "hasConflict": false,
+            "alreadyRendered": false,
+            "children": []
+          },
+          {
+            "module": "io.netty:netty-codec-http",
+            "name": "io.netty:netty-codec-http:4.1.66.Final",
+            "resolvable": "RESOLVED",
+            "hasConflict": false,
+            "alreadyRendered": false,
+            "children": [
+              {
+                "module": "io.netty:netty-common",
+                "name": "io.netty:netty-common:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": []
+              },
+              {
+                "module": "io.netty:netty-buffer",
+                "name": "io.netty:netty-buffer:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "module": "io.netty:netty-transport",
+                "name": "io.netty:netty-transport:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-buffer",
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-resolver",
+                    "name": "io.netty:netty-resolver:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": [
+                      {
+                        "module": "io.netty:netty-common",
+                        "name": "io.netty:netty-common:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "module": "io.netty:netty-codec",
+                "name": "io.netty:netty-codec:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-buffer",
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-transport",
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "module": "io.netty:netty-handler",
+                "name": "io.netty:netty-handler:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-resolver",
+                    "name": "io.netty:netty-resolver:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-buffer",
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-transport",
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-codec",
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "moduleInsights": [
+          {
+            "module": "io.netty:netty-common",
+            "insight": [
+              {
+                "name": "io.netty:netty-common:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-common:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "testCompileClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-codec:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-handler:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-transport:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-handler:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-codec:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-resolver:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-transport:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-transport",
+            "insight": [
+              {
+                "name": "io.netty:netty-transport:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-transport:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "testCompileClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-handler",
+            "insight": [
+              {
+                "name": "io.netty:netty-handler:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-handler:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "testCompileClasspath",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": true,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-resolver",
+            "insight": [
+              {
+                "name": "io.netty:netty-resolver:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-resolver:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "testCompileClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-codec:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-handler:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-buffer",
+            "insight": [
+              {
+                "name": "io.netty:netty-buffer:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-buffer:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "testCompileClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-codec:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-codec",
+            "insight": [
+              {
+                "name": "io.netty:netty-codec:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-codec:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "testCompileClasspath",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": true,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-codec-http",
+            "insight": [
+              {
+                "name": "io.netty:netty-codec-http:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-codec-http:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "testCompileClasspath",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "org.sonarsource.sonarqube:sonar-plugin-api",
+            "insight": [
+              {
+                "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "testCompileClasspath",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "testCompileOnly",
+        "description": "Compile only dependencies for source set 'test'.",
+        "dependencies": [],
+        "moduleInsights": []
+      },
+      {
+        "name": "testImplementation",
+        "description": "Implementation only dependencies for source set 'test'.",
+        "dependencies": [],
+        "moduleInsights": []
+      },
+      {
+        "name": "testRuntimeClasspath",
+        "description": "Runtime classpath of source set 'test'.",
+        "dependencies": [
+          {
+            "module": "org.sonarsource.sonarqube:sonar-plugin-api",
+            "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+            "resolvable": "RESOLVED",
+            "hasConflict": false,
+            "alreadyRendered": false,
+            "children": []
+          },
+          {
+            "module": "io.netty:netty-codec-http",
+            "name": "io.netty:netty-codec-http:4.1.66.Final",
+            "resolvable": "RESOLVED",
+            "hasConflict": false,
+            "alreadyRendered": false,
+            "children": [
+              {
+                "module": "io.netty:netty-common",
+                "name": "io.netty:netty-common:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": []
+              },
+              {
+                "module": "io.netty:netty-buffer",
+                "name": "io.netty:netty-buffer:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "module": "io.netty:netty-transport",
+                "name": "io.netty:netty-transport:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-buffer",
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-resolver",
+                    "name": "io.netty:netty-resolver:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": [
+                      {
+                        "module": "io.netty:netty-common",
+                        "name": "io.netty:netty-common:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "module": "io.netty:netty-codec",
+                "name": "io.netty:netty-codec:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-buffer",
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-transport",
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "module": "io.netty:netty-handler",
+                "name": "io.netty:netty-handler:4.1.66.Final",
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "alreadyRendered": false,
+                "children": [
+                  {
+                    "module": "io.netty:netty-common",
+                    "name": "io.netty:netty-common:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-resolver",
+                    "name": "io.netty:netty-resolver:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-buffer",
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-transport",
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  },
+                  {
+                    "module": "io.netty:netty-codec",
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "moduleInsights": [
+          {
+            "module": "io.netty:netty-common",
+            "insight": [
+              {
+                "name": "io.netty:netty-common:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-common:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-buffer:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "testRuntimeClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-codec:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-handler:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-transport:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-handler:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-codec:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-resolver:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-transport:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-transport",
+            "insight": [
+              {
+                "name": "io.netty:netty-transport:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-transport:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "testRuntimeClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-handler",
+            "insight": [
+              {
+                "name": "io.netty:netty-handler:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-handler:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "testRuntimeClasspath",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": true,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-resolver",
+            "insight": [
+              {
+                "name": "io.netty:netty-resolver:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-resolver:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "testRuntimeClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-codec:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          },
+                          {
+                            "name": "io.netty:netty-handler:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-buffer",
+            "insight": [
+              {
+                "name": "io.netty:netty-buffer:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-buffer:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "testRuntimeClasspath",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": false,
+                            "isLeaf": true,
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": false,
+                        "children": [
+                          {
+                            "name": "io.netty:netty-codec-http:4.1.66.Final",
+                            "resolvable": "RESOLVED",
+                            "hasConflict": false,
+                            "alreadyRendered": true,
+                            "isLeaf": false,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": true,
+                    "isLeaf": false,
+                    "children": []
+                  },
+                  {
+                    "name": "io.netty:netty-transport:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-handler:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      },
+                      {
+                        "name": "io.netty:netty-codec:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-codec",
+            "insight": [
+              {
+                "name": "io.netty:netty-codec:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-codec:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "io.netty:netty-codec-http:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "testRuntimeClasspath",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": false,
+                        "isLeaf": true,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "io.netty:netty-handler:4.1.66.Final",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": false,
+                    "children": [
+                      {
+                        "name": "io.netty:netty-codec-http:4.1.66.Final",
+                        "resolvable": "RESOLVED",
+                        "hasConflict": false,
+                        "alreadyRendered": true,
+                        "isLeaf": false,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "io.netty:netty-codec-http",
+            "insight": [
+              {
+                "name": "io.netty:netty-codec-http:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "io.netty:netty-codec-http:4.1.66.Final",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "testRuntimeClasspath",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "module": "org.sonarsource.sonarqube:sonar-plugin-api",
+            "insight": [
+              {
+                "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": []
+              },
+              {
+                "name": "org.sonarsource.sonarqube:sonar-plugin-api:9.4.0.54424",
+                "description": null,
+                "resolvable": "RESOLVED",
+                "hasConflict": false,
+                "children": [
+                  {
+                    "name": "testRuntimeClasspath",
+                    "resolvable": "RESOLVED",
+                    "hasConflict": false,
+                    "alreadyRendered": false,
+                    "isLeaf": true,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "testRuntimeOnly",
+        "description": "Runtime only dependencies for source set 'test'.",
+        "dependencies": [],
+        "moduleInsights": []
+      }
+    ]
+  }
+}

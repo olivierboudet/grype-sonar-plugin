@@ -11,6 +11,7 @@ public class GrypeConfiguration {
     public static final String JSON_REPORT_PATH_PROPERTY = "sonar.grype.reportPath";
     public static final String JSON_REPORT_PATH_DEFAULT = "grype-report.json";
     public static final String HTML_REPORT_PATH_PROPERTY = "sonar.grype.htmlReportPath";
+    public static final String DEPENDENCIES_REPORT_PATH_PROPERTY = "sonar.dependencies.reportPath";
 
     private GrypeConfiguration() {
         // do nothing
@@ -28,6 +29,11 @@ public class GrypeConfiguration {
                         .onQualifiers(Qualifiers.PROJECT)
                         .name("Grype HTML report path")
                         .description("path to the 'grype-report.html' file")
+                        .build(),
+                PropertyDefinition.builder(DEPENDENCIES_REPORT_PATH_PROPERTY)
+                        .onQualifiers(Qualifiers.PROJECT)
+                        .name("JSON dependencis report path")
+                        .description("path to the 'dependencies.json' file which describe all dependencies of the project")
                         .build()
         );
     }

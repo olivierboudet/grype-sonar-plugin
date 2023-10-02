@@ -11,3 +11,4 @@ sonar-example-plugin.iml
 .settings/
 
 yarnrc.yml
+/src/test/resources/.gradle/
