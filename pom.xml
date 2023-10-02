@@ -5,7 +5,7 @@
   <groupId>org.boudet</groupId>
   <artifactId>grype-sonar-plugin</artifactId>
   <packaging>sonar-plugin</packaging>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
 
   <name>Sonar Grype Plugin for SonarQube</name>
   <description>This SonarQube Plugin allows to parse a JSON and HTML reports from grype and import issues.</description>
